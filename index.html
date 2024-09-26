@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비즈니스 랜딩 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        #showcase {
+            position: relative;
+            height: 100vh;
+            color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+        }
+        #showcase .background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        #showcase .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100%;
+        }
+        #showcase h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        #showcase p {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        #showcase .highlight {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        #boxes {
+            margin-top: 20px;
+        }
+        #boxes .box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        #boxes .box img {
+            width: 90px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #363534;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">ICT</span> ALLinOne PASS 디자인</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#services">서비스</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <video tabindex="-1" role="application" id="vjs_video_3_html5_api" class="vjs-tech" loop="" muted="muted" autoplay="" >
+            <source src="https://cdn.pixabay.com/video/2019/03/13/21985-323496013_large.mp4" type="video/mp4">            
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1><span class="highlight">인공지능</span> 프로젝트 마스터</h1>
+            <p>수도권 ICT 이노베이션 스퀘어는 당신의 비즈니스를 성장시키는 데 필요한 모든 솔루션을 제공합니다.</p>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="uiux.jpg" alt="디자인 아이콘">
+                <h3>UI/UX Design</h3>
+                <p>혁신적이고 매력적인 디자인으로 당신의 브랜드를 돋보이게 합니다.</p>
+            </div>
+            <div class="box">
+                <img src="webapp.jpg" alt="개발 아이콘">
+                <h3>webAPP 개발</h3>
+                <p>최신 기술을 활용한 안정적이고 효율적인 웹사이트를 구축합니다.</p>
+            </div>
+            <div class="box">
+                <img src="digital.jpg" alt="마케팅 아이콘">
+                <h3>Digital 마케팅</h3>
+                <p>효과적인 온라인 전략으로 고객 확보와 매출 증대를 지원합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>ALLinOne PASS 디자인, Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>
